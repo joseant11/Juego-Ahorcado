@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del ahorcado</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="images/logo.svg" alt="Alura">
+        </header>
+        <!-- Sección de inicio -->
+        <section id="inicio" class="contenedor">
+            <div>
+                <button class="boton-1" id="boton-comenzar">Iniciar juego</button>
+            </div>
+            <div>
+                <button class="boton-2" id="adicionar-palabra">Agregar nueva palabra</button>
+            </div>
+        </section>
+
+        <!-- Sección de adicionar palabra -->
+        <section id="add-palabra" class="contenedor2 transparente">
+            <div>
+                <textarea name="palabra" id="palabra" cols="30" rows="9" placeholder="Ingrese una palabra"></textarea>
+            </div>
+            <div>
+                <button class="boton boton-3" id="guardar">Guardar y empezar</button>
+                <button class="boton boton-4" id="cancelar">Cancelar</button>
+            </div>
+        </section>
+
+        <!-- Sección del juego -->
+        <section id="juego" class="contenedor3 transparente">
+            <div>
+                <canvas id="ahorcado" height="400px" width="800px"></canvas>
+            </div>
+            <div>
+                <button class="boton boton-3" id="nuevo-juego">Nuevo juego</button>
+                <button class="boton boton-4" id="desistir">Desistir</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p>Todos los derechos reservados
+                <a href="mailto:joseantoniorosaguzman@gmail.com" class="link">Bl4ckP1tt</a>
+                <a href="https://github.com/joseant11" target="_blank">
+                    <img src="images/github.png" alt="GitHub" class="redes">
+                </a>
+            </p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/ahorcado.js"></script>
+    <script src="js/comenzarJuego.js"></script>
+    <script src="js/pintarLetra.js"></script>
+    <script src="js/compararLetra.js"></script>
+    <script src="js/result-ganar-perder.js"></script>
+</body>
+
+</html>
